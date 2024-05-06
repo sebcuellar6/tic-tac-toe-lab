@@ -83,11 +83,12 @@ function checkForWinner() {
     return false
 }
 
-
-
-
+function render() {
 updateBoard()
 updateMessage()
+}
+
+render()
 /*----------------------------- Event Listeners -----------------------------*/
 
 
