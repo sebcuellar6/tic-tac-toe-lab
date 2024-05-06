@@ -1,0 +1,45 @@
+/* 
+-don't need to touch flex, or flex wrap
+    
+-the .sqr class have a single parent the <section> element with the board class
+
+-the content of each element with the sqr class will have a final width of about 98px.
+
+-if i change the if i change the width-height of .board the .sqr changes because aspect/ratio 1:1
+
+
+*/
+
+body {
+    background-color: grey;
+    /* Use a system font, if none are available use an available sans-sarif */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: lightblue;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+  }
+  
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+   
+    width: 325px;
+    border-color: blue;
+  }
+  
+  .sqr {
+    width: 30%;
+    aspect-ratio: 1/1;
+    border: 3px solid blue;
+    font-size: 64px;
+    text-align: center;
+  }
+  
+  #restartBtn {
+    color: rgb(199, 19, 199);
+    background-color: lightgrey;
+    border: 3px solid brown
+  }
